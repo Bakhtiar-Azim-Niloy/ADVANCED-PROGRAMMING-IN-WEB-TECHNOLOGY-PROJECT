@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceProviderController;
 use App\Http\Controllers\RequestOrderToServiceProviderController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/clientCreate', [ClientController::class, 'client'])->name('clientCreate');
 Route::post('/clientCreate',[ClientController::class, 'clientCreateSubmitted'])->name('clientCreateSubmitted');
 //customer registration
@@ -70,8 +72,13 @@ Route::post('/clientEdit',[AdminController::class, 'clientEditSubmitted'])->name
 Route::get('/customerEdit/{customer_id}',[AdminController::class, 'customerEdit'])->name('customerEdit');
 Route::post('/customerEdit',[AdminController::class, 'customerEditSubmitted'])->name('customerEdit');
 
+//home page:
+Route::get('/home',[HomeController::class, 'index'])->name('home');
 
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 
