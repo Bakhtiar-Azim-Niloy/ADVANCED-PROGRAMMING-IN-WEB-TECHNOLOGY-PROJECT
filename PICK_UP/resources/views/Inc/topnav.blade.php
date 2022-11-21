@@ -18,13 +18,14 @@
 <a class="btn btn-primary" href="{{route('serviceDash')}}"> DashBoard </a>
 <a class="btn btn-primary" href="{{route('requestOrderList')}}"> Request Order List </a>
 @else
-<a class="btn btn-primary" href="{{route('home')}}">Home</a>
-<a class="btn btn-primary" href="{{route('products.list')}}">Products</a>
-<a class="btn btn-primary" href="{{route('products.mycart')}}"> Cart </a>
-<a class="btn btn-primary" href="{{route('products.emptycart')}}">Empty Cart </a>
-<a class="btn btn-primary" href="{{route('customerCreate')}}">Customer Registration</a>
-<a class="btn btn-primary" href="{{route('clientCreate')}}">Client Registration</a>
-<a class="btn btn-primary" href="{{route('serviceprovidercreate')}}">Service Provider Registration</a>
-<a class="btn btn-primary" href="{{route('login')}}">Login</a>
+<br>
+<a class="btn btn-light" href="{{route('home')}}">Home</a>
+<a class="btn btn-light" href="{{route('products.list')}}">Products</a>
+<a class="btn btn-light" href="{{route('products.mycart')}}"> Cart </a>
+<a class="btn btn-light" href="{{route('products.emptycart')}}">Empty Cart </a>
+<a class="btn btn-light" href="{{route('customerCreate')}}">Customer Registration</a>
+<a class="btn btn-light" href="{{route('clientCreate')}}">Client Registration</a>
+<a class="btn btn-light" href="{{route('serviceprovidercreate')}}">Service Provider Registration</a>
+<a class="btn btn-light" href="{{route('login')}}">Login</a>
 @endif
 
